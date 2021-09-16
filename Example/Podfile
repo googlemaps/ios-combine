@@ -1,0 +1,15 @@
+use_frameworks!
+
+platform :ios, '13.0'
+
+target 'GoogleMapsPlatformCombine_Example' do
+  pod 'GoogleMapsPlatformCombine/Maps', :path => '../'
+  pod 'GoogleMapsPlatformCombine/Places', :path => '../'
+
+  target 'GoogleMapsPlatformCombine_Tests' do
+    inherit! :search_paths
+
+    # pod 'Quick', '~> 2.2.0'
+    # pod 'Nimble', '~> 8.0.7'
+  end
+end
