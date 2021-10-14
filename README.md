@@ -1,6 +1,6 @@
-[![Version](https://img.shields.io/cocoapods/v/GoogleMapsPlatformCombine.svg?style=flat)](https://cocoapods.org/pods/GoogleMapsPlatformCombine)
-[![License](https://img.shields.io/cocoapods/l/GoogleMapsPlatformCombine.svg?style=flat)](https://cocoapods.org/pods/GoogleMapsPlatformCombine)
-[![Platform](https://img.shields.io/cocoapods/p/GoogleMapsPlatformCombine.svg?style=flat)](https://cocoapods.org/pods/GoogleMapsPlatformCombine)
+![Run unit tests](https://github.com/googlemaps/google-maps-ios-utils/workflows/tests/badge.svg)
+[![pod](https://img.shields.io/cocoapods/v/GoogleMapsPlatformCombine)](https://cocoapods.org/pods/GoogleMapsPlatformCombine)
+![Apache-2.0](https://img.shields.io/badge/license-Apache-blue)
 
 GoogleMapsPlatformCombine
 =======================
