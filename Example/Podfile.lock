@@ -4,20 +4,27 @@ PODS:
   - GoogleMaps/Base (5.1.0)
   - GoogleMaps/Maps (5.1.0):
     - GoogleMaps/Base
+  - GoogleMapsPlatformCombine (0.1.0):
+    - GoogleMapsPlatformCombine/Maps (= 0.1.0)
+    - GoogleMapsPlatformCombine/Places (= 0.1.0)
   - GoogleMapsPlatformCombine/Maps (0.1.0):
     - GoogleMaps (= 5.1.0)
   - GoogleMapsPlatformCombine/Places (0.1.0):
     - GooglePlaces (= 5.0.0)
+  - GoogleMapsPlatformCombine/Tests (0.1.0):
+    - OCMock
   - GooglePlaces (5.0.0)
+  - OCMock (3.8.1)
 
 DEPENDENCIES:
-  - GoogleMapsPlatformCombine/Maps (from `../`)
-  - GoogleMapsPlatformCombine/Places (from `../`)
+  - GoogleMapsPlatformCombine (from `../`)
+  - GoogleMapsPlatformCombine/Tests (from `../`)
 
 SPEC REPOS:
   trunk:
     - GoogleMaps
     - GooglePlaces
+    - OCMock
 
 EXTERNAL SOURCES:
   GoogleMapsPlatformCombine:
@@ -25,9 +32,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   GoogleMaps: 086ae1dab659eaa7339bdb30fc88e2f44e7c597c
-  GoogleMapsPlatformCombine: 74c23ccf85ab84fe5c2b30ba0b722a1e38c4faba
+  GoogleMapsPlatformCombine: 6f0c6dda750185bfd44aa98ac7f6706e56747d09
   GooglePlaces: 5d87ca13ed98b7a937e0d8bc7026f718c7263271
+  OCMock: 29f6e52085b4e7d9b075cbf03ed7c3112f82f934
 
-PODFILE CHECKSUM: f34952039b4867ac9d11bb9616e96d35035b81bf
+PODFILE CHECKSUM: f11b1fc695da1f97d428fc382a40d8b2ce0382cb
 
 COCOAPODS: 1.9.1

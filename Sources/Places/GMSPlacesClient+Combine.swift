@@ -144,7 +144,7 @@ extension GMSPlacesClient {
     ///
     /// - Parameter fields: the individual place fields requested for the place objects in the list
     /// - Returns: a publisher returning a list of likely places the user is at
-    public func findPlaceLikelihoodsFromCurrentPlace(
+    public func findPlaceLikelihoodsFromCurrentLocation(
         fields: GMSPlaceField
     ) -> Future<[GMSPlaceLikelihood], Error> {
         Future<[GMSPlaceLikelihood], Error> { promise in
