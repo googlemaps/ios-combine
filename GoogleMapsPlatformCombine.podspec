@@ -15,6 +15,8 @@ A swift library that provides Combine support via Publisher and Future for Googl
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'Sources/**/*'
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.subspec 'Maps' do |ss|
     ss.ios.deployment_target ='13.0'
