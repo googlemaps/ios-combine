@@ -37,7 +37,7 @@ pod 'GoogleMapsPlatformCombine/Places', '0.1.0'
 
 ### [Swift Package Manager](https://github.com/apple/swift-package-manager)
 
-// TODO
+See [#2](https://github.com/googlemaps/ios-combine/issues/2)
 
 ## Support
 
