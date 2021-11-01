@@ -7,7 +7,7 @@ plugins:
     - replacements:
         - files:
             - "./GoogleMapsPlatformCombine.podspec"
-          from: "s.version(\s)*= '.*'"
+          from: "s.version(\\s)*= '.*'"
           to: "s.version          = '${nextRelease.version}'"
 
         - files:
