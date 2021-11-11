@@ -1,4 +1,4 @@
-![Run unit tests](https://github.com/googlemaps/google-maps-ios-utils/workflows/tests/badge.svg)
+[![Run unit tests](https://github.com/googlemaps/ios-combine/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/googlemaps/ios-combine/actions/workflows/test.yml)
 [![pod](https://img.shields.io/cocoapods/v/GoogleMapsPlatformCombine)](https://cocoapods.org/pods/GoogleMapsPlatformCombine)
 ![Apache-2.0](https://img.shields.io/badge/license-Apache-blue)
 
