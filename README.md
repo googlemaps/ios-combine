@@ -10,7 +10,24 @@ A Swift ilbrary containing Combine support, via `Publisher` and `Future`, for Go
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+### Example Usage
+
+```swift
+// Create a GMSMapViewPublisher
+let publisher = GMSMapViewPublisher(mapView: mapView)
+
+// Subscribe to events
+publisher.didChangeCameraPosition.sink { cameraPosition in
+  print("Camera position at \(cameraPosition.target)")
+}
+```
+
+### Example Project
+
+To run the example project:
+
+1. Run `pod install` from the Example/ directory. 
+2. Open the `GoogleMapsPlatformCombine.xcworkspace` file in Xcode
 
 ## Requirements
 * Deployment Target of iOS 13.0+
