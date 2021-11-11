@@ -22,17 +22,17 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 In your `Podfile`:
 
 ```ruby
-pod 'GoogleMapsPlatformCombine', '0.1.0'
+pod 'GoogleMapsPlatformCombine', '0.2.0'
 ```
 
 Subspecs are also available if you only need Combine support for a specific SDK:
 
 ```ruby
 # For Combine support for the Maps SDK for iOS only
-pod 'GoogleMapsPlatformCombine/Maps', '0.1.0'
+pod 'GoogleMapsPlatformCombine/Maps', '0.2.0'
 
 # For Combine support for the Places SDK for iOS only
-pod 'GoogleMapsPlatformCombine/Places', '0.1.0'
+pod 'GoogleMapsPlatformCombine/Places', '0.2.0'
 ```
 
 ### [Swift Package Manager](https://github.com/apple/swift-package-manager)

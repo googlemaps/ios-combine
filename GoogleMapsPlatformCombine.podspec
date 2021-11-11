@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GoogleMapsPlatformCombine'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Swift library for Combine support with Google Maps Platform iOS SDKs'
 
   s.description      = <<-DESC
