@@ -30,5 +30,10 @@ A swift library that provides Combine support via Publisher and Future for Googl
     ss.dependency 'GooglePlaces', '5.0.0'
   end
 
+  s.test_spec 'Tests' do |test_spec|
+    test_spec.source_files = "Tests/Unit/**/*.swift"
+    test_spec.dependency 'OCMock'
+  end
+
   s.static_framework = true
 end
