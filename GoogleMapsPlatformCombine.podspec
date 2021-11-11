@@ -10,7 +10,7 @@ A swift library that provides Combine support via Publisher and Future for Googl
   s.homepage         = 'https://github.com/googlemaps/ios-combine'
   s.license          = { :type => 'Apache, Version 2.0', :file => 'LICENSE' }
   s.author           = 'Google Inc.'
-  s.source           = { :git => 'https://github.com/googlemaps/ios-combine.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/googlemaps/ios-combine.git', :tag => "v#{s.version.to_s}" }
   s.swift_version    = '5.0'
   s.ios.deployment_target = '13.0'
 
