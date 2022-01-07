@@ -4,14 +4,14 @@ PODS:
   - GoogleMaps/Base (5.1.0)
   - GoogleMaps/Maps (5.1.0):
     - GoogleMaps/Base
-  - GoogleMapsPlatformCombine (0.1.0):
-    - GoogleMapsPlatformCombine/Maps (= 0.1.0)
-    - GoogleMapsPlatformCombine/Places (= 0.1.0)
-  - GoogleMapsPlatformCombine/Maps (0.1.0):
+  - GoogleMapsPlatformCombine (0.2.0):
+    - GoogleMapsPlatformCombine/Maps (= 0.2.0)
+    - GoogleMapsPlatformCombine/Places (= 0.2.0)
+  - GoogleMapsPlatformCombine/Maps (0.2.0):
     - GoogleMaps (= 5.1.0)
-  - GoogleMapsPlatformCombine/Places (0.1.0):
+  - GoogleMapsPlatformCombine/Places (0.2.0):
     - GooglePlaces (= 5.0.0)
-  - GoogleMapsPlatformCombine/Tests (0.1.0):
+  - GoogleMapsPlatformCombine/Tests (0.2.0):
     - OCMock
   - GooglePlaces (5.0.0)
   - OCMock (3.8.1)
@@ -32,7 +32,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   GoogleMaps: 086ae1dab659eaa7339bdb30fc88e2f44e7c597c
-  GoogleMapsPlatformCombine: 6f0c6dda750185bfd44aa98ac7f6706e56747d09
+  GoogleMapsPlatformCombine: abaaa5380d1b8adc3b4579548b554cfeb04426b0
   GooglePlaces: 5d87ca13ed98b7a937e0d8bc7026f718c7263271
   OCMock: 29f6e52085b4e7d9b075cbf03ed7c3112f82f934
 

@@ -15,6 +15,8 @@ A swift library that provides Combine support via Publisher and Future for Googl
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'Sources/**/*'
+
+  # This is necessary as Maps & Places CocoaPods does not yet support M1
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 

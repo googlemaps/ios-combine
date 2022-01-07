@@ -54,7 +54,10 @@ pod 'GoogleMapsPlatformCombine/Places', '0.2.0'
 
 ### [Swift Package Manager](https://github.com/apple/swift-package-manager)
 
-See [#2](https://github.com/googlemaps/ios-combine/issues/2)
+Since the Maps/Places SDKs for iOS are not yet supported in SPM, if you install
+this library via SPM you will need to also install Maps/Places using one of the
+supported package managers. See installation options for [Maps][maps-install]
+and [Places][places-install] for more information.
 
 ## Support
 
@@ -68,6 +71,8 @@ You can also reach us on our [Discord channel].
 For more information, check out the detailed guide on the
 [Google Developers site][devsite-guide].
 
+[maps-install]: https://developers.google.com/maps/documentation/ios-sdk/start#download-sdk
+[places]: https://developers.google.com/maps/documentation/places/ios-sdk/start#step-2:-install-the-sdk
 [contributing]: CONTRIBUTING.md
 [code of conduct]: CODE_OF_CONDUCT.md
 [Discord channel]: https://discord.gg/9fwRNWg
