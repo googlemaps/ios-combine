@@ -22,11 +22,11 @@ let package = Package(
     products: [
         .library(
             name: "GoogleMapsPlatformCombineMaps",
-            targets: ["GoogleMapsPlatformCombineMapsTarget"]
+            targets: ["GoogleMapsPlatformCombineMaps"]
         ),
         .library(
             name: "GoogleMapsPlatformCombinePlaces",
-            targets: ["GoogleMapsPlatformCombinePlacesTarget"]
+            targets: ["GoogleMapsPlatformCombinePlaces"]
         )
     ],
     dependencies: [
@@ -38,15 +38,15 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "GoogleMapsPlatformCombineMapsTarget",
+            name: "GoogleMapsPlatformCombineMaps",
             path: "Sources/Maps"
         ),
         .target(
-            name: "GoogleMapsPlatformCombinePlacesTarget",
+            name: "GoogleMapsPlatformCombinePlaces",
             path: "Sources/Places"
         )
         // Disabling test target until Maps/Places supports SPM
-        // https://issuetracker.google.com/issues/141721633
+        // https://corp.google.com/issues/141721633
         //
         //.testTarget(
         //    name: "GoogleMapsPlatformCombineUnitTests",
