@@ -25,3 +25,5 @@ zip -r $XCFRAMEWORK_ZIP $XCFRAMEWORK
 CHECKSUM=$(swift package compute-checksum $XCFRAMEWORK_ZIP)
 sed -i '' "s/checksum: \"[a-z0-9]*\"/checksum: \"$CHECKSUM\"/g" Package.swift
 
+# 4. Revert changes to .podspec file
+git ct $PODSPEC_FILE
