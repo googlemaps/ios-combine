@@ -39,7 +39,7 @@ jobs:
 
     - name: Create XCFramework
       run: |
-        scripts/create_xcframework.sh
+        scripts/create_xcframework.sh $GITHUB_WORKSPACE/GoogleMapsPlatformCombine.podspec
 
     - name: Semantic Release
       uses: cycjimmy/semantic-release-action@v2

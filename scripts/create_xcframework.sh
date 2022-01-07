@@ -1,8 +1,7 @@
 #!/bin/sh
+# Creates a .zip xcframework
 
 PODSPEC_FILE="$1"
-
-# Create a .zip xcframework
 
 # 1. Update .podspec
 sed -i '' '/s.user_target.*/d' $PODSPEC_FILE
