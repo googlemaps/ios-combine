@@ -15,6 +15,11 @@ plugins:
           from: ", '([0-9]+).([0-9]+).([0-9]+)'"
           to: ", '${nextRelease.version}'"
 
+        - files:
+            - "Package.swift"
+          from: "v([0-9]+).([0-9]+).([0-9]+)"
+          to: "v${nextRelease.version}"
+
   - - "@semantic-release/exec"
     - verifyConditionsCmd: "pod lib lint"
       publishCmd: "pod trunk push"
@@ -22,6 +27,10 @@ plugins:
     - assets:
         - "./GoogleMapsPlatformCombine.podspec"
         - "*.md"
+        - "Package.swift"
+  - - "@semantic-release/github"
+    - assets:
+        - "./GoogleMapsPlatformCombine.xcframework.zip"
 
 options:
   debug: true
