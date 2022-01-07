@@ -43,8 +43,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "GoogleMapsPlatformCombine",
-            url: "https://github.com/googlemaps/ios-combine/releases/download/v0.3.0/GoogleMapsPlatformCombine.xcframework.zip",
-            checksum: "8d63d08653516acefa529b020bc0f9a6ef087f492c2785b33979602b814ae3fb"
+            url: "https://github.com/googlemaps/ios-combine/releases/download/v0.3.1/GoogleMapsPlatformCombine.xcframework.zip",
+            checksum: "2374c4484be35c5732f77315bcd46d30fe52964ccf8893d6603dd27ca3e674ea"
         ),
         // .target(
         //     name: "GoogleMapsPlatformCombineMaps",
