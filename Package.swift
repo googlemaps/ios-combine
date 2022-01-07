@@ -20,14 +20,14 @@ let package = Package(
     name: "GoogleMapsPlatformCombine",
     platforms: [.iOS(.v13)],
     products: [
-        .library(
-            name: "GoogleMapsPlatformCombineMaps",
-            targets: ["GoogleMapsPlatformCombineMaps"]
-        ),
-        .library(
-            name: "GoogleMapsPlatformCombinePlaces",
-            targets: ["GoogleMapsPlatformCombinePlaces"]
-        ),
+        // .library(
+        //     name: "GoogleMapsPlatformCombineMaps",
+        //     targets: ["GoogleMapsPlatformCombineMaps"]
+        // ),
+        // .library(
+        //     name: "GoogleMapsPlatformCombinePlaces",
+        //     targets: ["GoogleMapsPlatformCombinePlaces"]
+        // ),
         .library(
             name: "GoogleMapsPlatformCombine",
             targets: ["GoogleMapsPlatformCombine"]
@@ -46,14 +46,14 @@ let package = Package(
             url: "https://github.com/googlemaps/ios-combine/releases/download/v0.1.0/GoogleMapsPlatformCombine.xcframework.zip",
             checksum: "3cb7dd65c5a9440cf3978ab33f9541041c5c880d72378599b1b716c335535f69"
         ),
-        .target(
-            name: "GoogleMapsPlatformCombineMaps",
-            path: "Sources/Maps"
-        ),
-        .target(
-            name: "GoogleMapsPlatformCombinePlaces",
-            path: "Sources/Places"
-        )
+        // .target(
+        //     name: "GoogleMapsPlatformCombineMaps",
+        //     path: "Sources/Maps"
+        // ),
+        // .target(
+        //     name: "GoogleMapsPlatformCombinePlaces",
+        //     path: "Sources/Places"
+        // )
         // Disabling test target until Maps/Places supports SPM
         // https://corp.google.com/issues/141721633
         //
