@@ -72,7 +72,7 @@ For more information, check out the detailed guide on the
 [Google Developers site][devsite-guide].
 
 [maps-install]: https://developers.google.com/maps/documentation/ios-sdk/start#download-sdk
-[places]: https://developers.google.com/maps/documentation/places/ios-sdk/start#step-2:-install-the-sdk
+[places-install]: https://developers.google.com/maps/documentation/places/ios-sdk/start#step-2:-install-the-sdk
 [contributing]: CONTRIBUTING.md
 [code of conduct]: CODE_OF_CONDUCT.md
 [Discord channel]: https://discord.gg/9fwRNWg
