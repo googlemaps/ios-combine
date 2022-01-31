@@ -39,3 +39,4 @@ Example/Pods/
 gen/
 .swiftpm/
 .build/
+*.xcworkspace/
