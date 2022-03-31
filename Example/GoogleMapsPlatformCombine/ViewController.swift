@@ -16,6 +16,7 @@
 import Combine
 import GoogleMapsPlatformCombine
 import GoogleMaps
+import GooglePlaces
 import UIKit
 
 class ViewController: UIViewController {
@@ -42,10 +43,34 @@ class ViewController: UIViewController {
       marker.snippet = "Australia"
       marker.map = mapView
 
-      publisher = GMSMapViewPublisher(mapView: mapView)
+      // [START maps_ios_combine_publisher_camera_change_position]
+      let publisher = GMSMapViewPublisher(mapView: mapView)
       publisher.didChangeCameraPosition.sink { cameraPosition in
         print("Camera position at \(cameraPosition.target)")
-      }.store(in: &subscriptions)
+      }
+      // [END maps_ios_combine_publisher_camera_change_position]
+      .store(in: &subscriptions)
+
+      self.publisher = publisher
+
+
+    }
+
+    private func fetchPlaceSample() {
+        // [START maps_ios_combine_future_fetch_place]
+        GMSPlacesClient.shared()
+          .fetchPlace(
+            id: "placeId",
+            fields: [.placeID, .name, .phoneNumber]
+          )
+          .sink { completion in
+            print("Completion \(completion)")
+          } receiveValue: { place in
+            print("Got place \(place.name ?? "")")
+          }
+        // [END maps_ios_combine_future_fetch_place]
+
+          .store(in: &subscriptions)
     }
 }
 
