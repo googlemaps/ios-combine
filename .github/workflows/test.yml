@@ -25,7 +25,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  run_unit_tests:
+  test:
     runs-on: macos-latest
 
     steps:
