@@ -24,36 +24,55 @@ class ViewController: UIViewController {
     private var publisher: GMSMapViewPublisher!
     private var subscriptions: Set<AnyCancellable> = []
 
-    private let sydneyLatitude = -33.86
-    private let sydneyLongitude = 151.20
+    private let sydneyLatitude: Double = -33.86
+    private let sydneyLongitude: Double = 151.20
+    private let markerTitle: String = "Sydney"
+    private let markerSnippet: String = "Australia"
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let mapView: GMSMapView = createGMSCameraPositionAndMapView()
+        setupGMSMapView(mapView: mapView)
+        createGMSMarkerInTheCenterOfTheMap(mapView: mapView)
+        startAndEndMapsCombinePublisher(mapView: mapView)
+    }
 
-      // Create a GMSCameraPosition that tells the map to display the
-      // coordinate -33.86,151.20 at zoom level 6.
-      let camera = GMSCameraPosition.camera(withLatitude: sydneyLatitude, longitude: sydneyLongitude, zoom: 6.0)
-      let mapView = GMSMapView.map(withFrame: view.frame, camera: camera)
-      view.addSubview(mapView)
+    /// Create a GMSCameraPosition that tells the map to display the coordinate -33.86,151.20 at zoom level 6.
+    /// - Returns: GMSMapView
+    private func createGMSCameraPositionAndMapView() -> GMSMapView {
+        let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: sydneyLatitude, longitude: sydneyLongitude, zoom: 6.0)
+        let mapView: GMSMapView = GMSMapView.map(withFrame: view.frame, camera: camera)
+        return mapView
+    }
 
-      // Creates a marker in the center of the map.
-      let marker = GMSMarker()
-      marker.position = CLLocationCoordinate2D(latitude: sydneyLatitude, longitude: sydneyLongitude)
-      marker.title = "Sydney"
-      marker.snippet = "Australia"
-      marker.map = mapView
+    /// Setup GMSMapView
+    /// - Parameter mapView: GMSMapView
+    private func setupGMSMapView(mapView: GMSMapView) {
+        view.addSubview(mapView)
+    }
 
-      // [START maps_ios_combine_publisher_camera_change_position]
-      let publisher = GMSMapViewPublisher(mapView: mapView)
-      publisher.didChangeCameraPosition.sink { cameraPosition in
-        print("Camera position at \(cameraPosition.target)")
-      }
-      // [END maps_ios_combine_publisher_camera_change_position]
-      .store(in: &subscriptions)
+    /// Creates a marker in the center of the map.
+    /// - Parameter mapView: GMSMapView
+    private func createGMSMarkerInTheCenterOfTheMap(mapView: GMSMapView) {
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: sydneyLatitude, longitude: sydneyLongitude)
+        marker.title = markerTitle
+        marker.snippet = markerSnippet
+        marker.map = mapView
+    }
 
-      self.publisher = publisher
+    /// Start and End Maps iOS combine publisher camera change position
+    /// - Parameter mapView: GMSMapView
+    private func startAndEndMapsCombinePublisher(mapView: GMSMapView) {
+        // [START maps_ios_combine_publisher_camera_change_position]
+        let publisher = GMSMapViewPublisher(mapView: mapView)
+        publisher.didChangeCameraPosition.sink { cameraPosition in
+            print("Camera position at \(cameraPosition.target)")
+        }
+        // [END maps_ios_combine_publisher_camera_change_position]
+        .store(in: &subscriptions)
 
-
+        self.publisher = publisher
     }
 
     private func fetchPlaceSample() {
