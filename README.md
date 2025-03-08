@@ -39,7 +39,7 @@ publisher.didChangeCameraPosition.sink { cameraPosition in
 
 To run the example project:
 
-1. Run `pod install` from the Example/ directory. 
+1. Run `pod install` from the Example/ directory.
 2. Open the `GoogleMapsPlatformCombine.xcworkspace` file in Xcode
 
 ## Installation
@@ -77,11 +77,11 @@ Contributions are welcome and encouraged! If you'd like to contribute, send us a
 
 This library uses Google Maps Platform services. Use of Google Maps Platform services through this library is subject to the Google Maps Platform [Terms of Service].
 
-This library is not a Google Maps Platform Core Service. Therefore, the Google Maps Platform Terms of Service (e.g. Technical Support Services, Service Level Agreements, and Deprecation Policy) do not apply to the code in this library.
+This library is not a Google Maps Platform Core Service. Therefore, the Google Maps Platform Terms of Service, e.g., [Technical Support Services Guidelines], Service Level Agreement ["SLA"][SLA], and [Deprecation Policy], do not apply to the code in this library.
 
 ## Support
 
-This library is offered via an open source [license]. It is not governed by the Google Maps Platform Support [Technical Support Services Guidelines, the SLA, or the [Deprecation Policy]. However, any Google Maps Platform services used by the library remain subject to the Google Maps Platform Terms of Service.
+This library is offered via an open source [license]. It is not governed by the Google Maps Platform Support Technical Support Services Guidelines, the SLA, or the Deprecation Policy. However, any Google Maps Platform services used by the library remain subject to the Google Maps Platform Terms of Service.
 
 This library adheres to [semantic versioning] to indicate when backwards-incompatible changes are introduced. Accordingly, while the library is in version 0.x, backwards-incompatible changes may be introduced at any time.
 
@@ -96,7 +96,7 @@ You can also discuss this library on our [Discord server].
 [maps-sdk]: https://developers.google.com/maps/documentation/ios-sdk/overview
 [documentation]: https://googlemaps.github.io/ios-combine
 
-[code of conduct]: CODE_OF_CONDUCT.md
+[code of conduct]: ?tab=coc-ov-file#readme
 [contributing guide]: CONTRIBUTING.md
 [Deprecation Policy]: https://cloud.google.com/maps-platform/terms
 [developer community channels]: https://developers.google.com/maps/developer-community
