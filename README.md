@@ -59,6 +59,16 @@ this library via SPM you will need to also install Maps/Places using one of the
 supported package managers. See installation options for [Maps][maps-install]
 and [Places][places-install] for more information.
 
+## Terms of Service
+
+This sample uses Google Maps Platform services. Use of Google Maps Platform
+services through this sample is subject to the
+[Google Maps Platform Terms of Service](https://cloud.google.com/maps-platform/terms).
+
+**European Economic Area (EEA) developers**
+
+If your billing address is in the European Economic Area, effective on 8 July 2025, the [Google Maps Platform EEA Terms of Service](https://cloud.google.com/terms/maps-platform/eea) will apply to your use of the Services. Functionality varies by region. [Learn more](https://developers.google.com/maps/comms/eea/faq).
+
 ## Support
 
 Encounter an issue while using this library?
