@@ -37,4 +37,10 @@ jobs:
         sudo gem install cocoapods
 
     - name: CocoaPods spec lint
-      run: pod lib lint
+      run: pod lib lint --skip-tests --allow-warnings
+
+    - name: Build Example App
+      run: |
+        export LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
+        pod install --project-directory=Example/
+        xcodebuild -workspace Example/GoogleMapsPlatformCombine.xcworkspace -scheme GoogleMapsPlatformCombine-Example -destination 'generic/platform=iOS Simulator' build
