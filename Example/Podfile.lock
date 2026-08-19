@@ -1,20 +1,18 @@
 PODS:
-  - GoogleMaps (5.1.0):
-    - GoogleMaps/Maps (= 5.1.0)
-  - GoogleMaps/Base (5.1.0)
-  - GoogleMaps/Maps (5.1.0):
-    - GoogleMaps/Base
+  - GoogleMaps (9.4.0):
+    - GoogleMaps/Maps (= 9.4.0)
+  - GoogleMaps/Maps (9.4.0)
   - GoogleMapsPlatformCombine (0.3.1):
     - GoogleMapsPlatformCombine/Maps (= 0.3.1)
     - GoogleMapsPlatformCombine/Places (= 0.3.1)
   - GoogleMapsPlatformCombine/Maps (0.3.1):
-    - GoogleMaps (= 5.1.0)
+    - GoogleMaps (>= 9.0)
   - GoogleMapsPlatformCombine/Places (0.3.1):
-    - GooglePlaces (= 5.0.0)
+    - GooglePlaces (>= 8.0)
   - GoogleMapsPlatformCombine/Tests (0.3.1):
     - OCMock
-  - GooglePlaces (5.0.0)
-  - OCMock (3.8.1)
+  - GooglePlaces (9.4.1)
+  - OCMock (3.9.4)
 
 DEPENDENCIES:
   - GoogleMapsPlatformCombine (from `../`)
@@ -31,11 +29,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GoogleMaps: 086ae1dab659eaa7339bdb30fc88e2f44e7c597c
-  GoogleMapsPlatformCombine: 61083eb467d3b8eafec84159ce687897d2c0365c
-  GooglePlaces: 5d87ca13ed98b7a937e0d8bc7026f718c7263271
-  OCMock: 29f6e52085b4e7d9b075cbf03ed7c3112f82f934
+  GoogleMaps: 0608099d4870cac8754bdba9b6953db543432438
+  GoogleMapsPlatformCombine: 71de5b0ff0ce10e88764b709b4ca06d3db56cf21
+  GooglePlaces: 8afca6c4e946472e91298589d1640d614b51749a
+  OCMock: 589f2c84dacb1f5aaf6e4cec1f292551fe748e74
 
-PODFILE CHECKSUM: f11b1fc695da1f97d428fc382a40d8b2ce0382cb
+PODFILE CHECKSUM: cacddf3ded707746911aab23c2a608c2ca848110
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.15.2
