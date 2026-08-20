@@ -12,7 +12,7 @@ A swift library that provides Combine support via Publisher and Future for Googl
   s.author           = 'Google Inc.'
   s.source           = { :git => 'https://github.com/googlemaps/ios-combine.git', :tag => "v#{s.version.to_s}" }
   s.swift_version    = '5.0'
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '15.0'
 
   s.source_files = 'Sources/**/*'
 
@@ -21,15 +21,15 @@ A swift library that provides Combine support via Publisher and Future for Googl
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.subspec 'Maps' do |ss|
-    ss.ios.deployment_target ='13.0'
+    ss.ios.deployment_target ='15.0'
     ss.source_files = "Sources/Maps/*"
-    ss.dependency 'GoogleMaps', '5.1.0'
+    ss.dependency 'GoogleMaps', '>= 9.0'
   end
 
   s.subspec 'Places' do |ss|
-    ss.ios.deployment_target ='13.0'
+    ss.ios.deployment_target ='15.0'
     ss.source_files = "Sources/Places/*"
-    ss.dependency 'GooglePlaces', '5.0.0'
+    ss.dependency 'GooglePlaces', '>= 8.0'
   end
 
   s.test_spec 'Tests' do |test_spec|
